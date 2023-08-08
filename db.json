@@ -1,0 +1,667 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "json-server",
+      "userId": "2"
+    }
+  ],
+  "articles": [
+    {
+      "id": "1",
+      "title": "Javascript news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": ["IT"],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
+        },
+        {
+          "id": "7",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "8",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        },
+        {
+          "id": "9",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Python News",
+      "subtitle": "What's New in Python for 2022?",
+      "img": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
+      "views": 850,
+      "createdAt": "15.05.2022",
+      "userId": "1",
+      "type": ["SCIENCE"],
+      "blocks": [
+        {
+          "id": "10",
+          "type": "TEXT",
+          "title": "Introduction to Python",
+          "paragraphs": [
+            "Python is a high-level programming language known for its simplicity and readability.",
+            "It is widely used in various domains, including web development, data analysis, and artificial intelligence.",
+            "If you are new to Python, this article will guide you through the basics of the language."
+          ]
+        },
+        {
+          "id": "11",
+          "type": "CODE",
+          "code": "print('Hello, world!')"
+        },
+        {
+          "id": "12",
+          "type": "IMAGE",
+          "src": "https://example.com/python-screenshot.png",
+          "title": "Screenshot of Python Code"
+        },
+        {
+          "id": "13",
+          "type": "TEXT",
+          "paragraphs": [
+            "Python provides a large standard library and a vibrant community that contributes to numerous third-party libraries.",
+            "Its versatility and ease of use make it a popular choice for both beginners and experienced developers.",
+            "In this article, we will explore some of the exciting features introduced in Python 3.10."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Machine Learning Trends",
+      "subtitle": "Latest Developments in Machine Learning",
+      "img": "https://media.istockphoto.com/id/1194689977/vector/artificial-intelligence-thin-line-icon-machine-learning-logo-for-deep-tech-vector.jpg?s=612x612&w=0&k=20&c=Dc9Pagwm2mYjLCsfg7Y-hkH7yMTNtlu9K73quTPIYhM=",
+      "views": 1200,
+      "createdAt": "10.09.2022",
+      "userId": "1",
+      "type": ["IT"],
+      "blocks": [
+        {
+          "id": "14",
+          "type": "TEXT",
+          "title": "Overview of Machine Learning",
+          "paragraphs": [
+            "Machine Learning is a subset of artificial intelligence that enables systems to learn from data and improve their performance over time.",
+            "The field has seen rapid advancements in recent years, leading to innovative applications in various industries."
+          ]
+        },
+        {
+          "id": "15",
+          "type": "CODE",
+          "code": "model.fit(X_train, y_train)"
+        },
+        {
+          "id": "16",
+          "type": "TEXT",
+          "paragraphs": [
+            "Deep Learning, a subfield of Machine Learning, has revolutionized the way we approach complex tasks such as image recognition and natural language processing.",
+            "In this article, we will explore the latest trends and breakthroughs in the field of Machine Learning."
+          ]
+        },
+        {
+          "id": "17",
+          "type": "IMAGE",
+          "src": "https://example.com/ml-algorithms.png",
+          "title": "Illustration of Machine Learning Algorithms"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Blockchain Technology",
+      "subtitle": "The Power of Decentralization",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9UP_1qwqZvq6n1h_4RqzDF2tfUFDgBcp85P4QeI8y&s",
+      "views": 620,
+      "createdAt": "03.11.2022",
+      "userId": "2",
+      "type": ["IT"],
+      "blocks": [
+        {
+          "id": "18",
+          "type": "TEXT",
+          "title": "Introduction to Blockchain",
+          "paragraphs": [
+            "Blockchain is a distributed and decentralized ledger technology that ensures transparency and security in transactions.",
+            "Originally designed for supporting cryptocurrencies like Bitcoin, it has found applications in various sectors, including finance, healthcare, and supply chain management."
+          ]
+        },
+        {
+          "id": "19",
+          "type": "CODE",
+          "code": "const block = new Block(data, previousHash, timestamp);"
+        },
+        {
+          "id": "20",
+          "type": "TEXT",
+          "paragraphs": [
+            "In this article, we will delve into the fundamental concepts of blockchain and explore its potential to disrupt traditional systems.",
+            "Moreover, we will discuss the challenges and opportunities associated with this revolutionary technology."
+          ]
+        },
+        {
+          "id": "21",
+          "type": "IMAGE",
+          "src": "https://example.com/blockchain-network.png",
+          "title": "Illustration of Blockchain Network"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Space Exploration",
+      "subtitle": "Discovering the Cosmos",
+      "img": "https://media.istockphoto.com/id/1300054518/vector/modern-space-helmet-with-rocket-launch-inside.jpg?s=612x612&w=0&k=20&c=EOUiDmdTVh0-GpDKqIGovvZ9jwplPCDVGIYQsuCPwD8=",
+      "views": 980,
+      "createdAt": "22.12.2022",
+      "userId": "2",
+      "type": ["SCIENCE"],
+      "blocks": [
+        {
+          "id": "22",
+          "type": "TEXT",
+          "title": "The Journey to the Stars",
+          "paragraphs": [
+            "Space exploration has been one of humanity's greatest endeavors, driven by curiosity and the quest for knowledge.",
+            "Throughout history, we have made remarkable strides in understanding our universe and the celestial bodies beyond Earth."
+          ]
+        },
+        {
+          "id": "23",
+          "type": "IMAGE",
+          "src": "https://example.com/space-rovers.png",
+          "title": "Rovers Exploring Mars"
+        },
+        {
+          "id": "24",
+          "type": "TEXT",
+          "paragraphs": [
+            "From the first satellite launch to Mars rovers and the Voyager missions, space exploration has shaped our understanding of the cosmos.",
+            "In this article, we will take a glimpse into some of the most iconic space missions and the ongoing efforts to explore outer space."
+          ]
+        },
+        {
+          "id": "25",
+          "type": "CODE",
+          "code": "// Placeholder for future space exploration code examples"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "New IT Trends in 2023",
+      "subtitle": "Exploring the latest advancements in the IT industry",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR_BXjhk086WJJf5xwo9Zl2Z5puaY4X3eHyOa0v-EdEQ&s",
+      "views": 850,
+      "createdAt": "01.08.2023",
+      "userId": "1",
+      "type": ["IT"],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Introduction",
+          "paragraphs": [
+            "The world of information technology is rapidly evolving, and 2023 has brought forth some exciting trends and innovations.",
+            "In this article, we will explore the cutting-edge technologies and breakthroughs that are shaping the IT landscape."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "console.log('Welcome to the future of IT!');"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "paragraphs": [
+            "From AI-powered applications to quantum computing, the IT industry is witnessing a revolution.",
+            "Join us on this journey as we delve into the latest developments and their potential impact on businesses and society."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://example.com/it-trend-image.png",
+          "title": "Image: AI and Automation"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "The Future of Space Exploration",
+      "subtitle": "Advancements in Space Technology",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0um4-Ji32aGf1jrClxyILtCvcOhF7DPxK03eGikzCcmeqTr1JUujiPYkwbLWKwcBxqt4&usqp=CAU",
+      "views": 1200,
+      "createdAt": "15.07.2023",
+      "userId": "1",
+      "type": ["SCIENCE"],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "paragraphs": [
+            "Humanity's quest to explore the cosmos has taken significant leaps in 2023.",
+            "In this article, we will highlight the breakthroughs in space technology and missions that are redefining our understanding of the universe."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const spaceStation = new SpaceStation();\nspaceStation.launch();"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "paragraphs": [
+            "From private space tourism to missions to distant planets, space exploration is becoming more accessible and ambitious.",
+            "Join us as we delve into the exciting discoveries and upcoming projects that hold the promise of a new era in space exploration."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://example.com/space-exploration-image.png",
+          "title": "Image: A Journey to Mars"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "The Rise of NFTs in the Art World",
+      "subtitle": "Exploring the Impact of Non-Fungible Tokens",
+      "img": "https://miro.medium.com/v2/resize:fit:1400/1*R2Qg-Q0nI2DkQ-meXe7VaA.jpeg",
+      "views": 650,
+      "createdAt": "03.06.2023",
+      "userId": "1",
+      "type": ["ART"],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "paragraphs": [
+            "Non-fungible tokens (NFTs) have taken the art world by storm in 2023.",
+            "In this article, we will dive into the concept of NFTs, their influence on the art market, and the challenges they pose to traditional art ownership and copyright."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const nftArtwork = new NFTArtwork();\nnftArtwork.display();"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "paragraphs": [
+            "From record-breaking sales to digital art revolution, NFTs have brought a paradigm shift in how we perceive and value art.",
+            "Join us as we analyze the pros and cons of this digital art movement and its potential impact on artists and collectors."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://example.com/nft-artwork-image.png",
+          "title": "Image: The World of Digital Art"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "The Future of Sustainable Energy",
+      "subtitle": "Innovations in Renewable Energy Sources",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKaJXFZjdOE06ujENLIXEDV7AdV1QZrtASw&usqp=CAU",
+      "views": 850,
+      "createdAt": "18.04.2023",
+      "userId": "1",
+      "type": ["ENVIRONMENT"],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "paragraphs": [
+            "The global push for sustainable energy solutions has reached new heights in 2023.",
+            "In this article, we will explore the latest advancements in renewable energy sources and their potential to mitigate climate change."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const solarPanel = new SolarPanel();\nsolarPanel.generateEnergy();"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "paragraphs": [
+            "From solar farms to wind turbines, clean energy technologies are reshaping the energy landscape.",
+            "Join us as we discuss the challenges and opportunities in transitioning towards a sustainable and greener future."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://example.com/sustainable-energy-image.png",
+          "title": "Image: Solar Power Generation"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "ChatGPT: The Future of Conversational AI",
+      "subtitle": "An In-Depth Look at OpenAI's Language Model",
+      "img": "https://www.aimlmag.com/wp-content/uploads/2023/07/images-36-720x415.jpeg",
+      "views": 2000,
+      "createdAt": "12.11.2023",
+      "userId": "1",
+      "type": ["ARTIFICIAL_INTELLIGENCE"],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "paragraphs": [
+            "ChatGPT is a cutting-edge language model developed by OpenAI.",
+            "In this article, we will explore the capabilities of ChatGPT, its underlying technology, and the impact it has had on various industries."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://example.com/chatgpt-demo-image.png",
+          "title": "Image: ChatGPT in Action"
+        },
+        {
+          "id": "5",
+          "type": "TEXT",
+          "paragraphs": [
+            "As a powerful natural language processing tool, ChatGPT has found applications in customer service, content generation, and even creative writing.",
+            "Join us as we delve into the advancements in conversational AI and the potential of ChatGPT to revolutionize how we interact with machines."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "code": "const chatGPT = new ChatGPT();\nchatGPT.generateResponse();"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "Интересная статья, рассказывает о том, как запустить простую программу на JavaScript. Очень полезная информация для новичков в разработке!",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "text": "Да, JavaScript всегда был известен своей простотой и удобством. Отличный пример Hello, world! на этом языке!",
+      "articleId": "1",
+      "userId": "2"
+    },
+    {
+      "id": "3",
+      "text": "Мне нравится, как JavaScript развивается с годами. Всегда интересно узнать, что нового появилось в этом языке за последний год.",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "4",
+      "text": "Python - прекрасный язык, особенно для начинающих. Пример Hello, world! покажет всю его простоту.",
+      "articleId": "2",
+      "userId": "1"
+    },
+    {
+      "id": "5",
+      "text": "Python 3.10 звучит интересно! Надеюсь, статья расскажет обо всех нововведениях этой версии.",
+      "articleId": "2",
+      "userId": "2"
+    },
+    {
+      "id": "6",
+      "text": "Python - лучший выбор для анализа данных и машинного обучения. Не могу дождаться обзора новых фичей!",
+      "articleId": "2",
+      "userId": "2"
+    },
+    {
+      "id": "7",
+      "text": "Машинное обучение меняет наш мир, и я с нетерпением жду обзора последних тенденций.",
+      "articleId": "3",
+      "userId": "1"
+    },
+    {
+      "id": "8",
+      "text": "Deep Learning действительно потрясающий подход! Без него сложно представить современные системы компьютерного зрения.",
+      "articleId": "3",
+      "userId": "2"
+    },
+    {
+      "id": "9",
+      "text": "Программирование в машинном обучении может быть сложным, но результаты стоят того. Жду новых исследований!",
+      "articleId": "3",
+      "userId": "1"
+    },
+    {
+      "id": "10",
+      "text": "Блокчейн - это удивительная технология, и она действительно меняет многие отрасли. Надеюсь, статья будет содержательной!",
+      "articleId": "4",
+      "userId": "1"
+    },
+    {
+      "id": "11",
+      "text": "Интересно узнать о применении блокчейна в финансах и управлении цепочками поставок. Эта технология обещает быть революционной.",
+      "articleId": "4",
+      "userId": "2"
+    },
+    {
+      "id": "12",
+      "text": "Блокчейн - это будущее, и я с нетерпением жду ознакомления с примерами его применения.",
+      "articleId": "4",
+      "userId": "1"
+    },
+    {
+      "id": "13",
+      "text": "Исследование космоса всегда меняло наше понимание мира. Надеюсь, статья расскажет о новейших миссиях и открытиях.",
+      "articleId": "5",
+      "userId": "1"
+    },
+    {
+      "id": "14",
+      "text": "Космос всегда вдохновлял меня, и я увлечен исследованиями, которые сейчас проводятся.",
+      "articleId": "5",
+      "userId": "2"
+    },
+    {
+      "id": "15",
+      "text": "Хотя я не специалист в космических науках, мне интересно узнать о новейших достижениях в этой области.",
+      "articleId": "5",
+      "userId": "2"
+    },
+    {
+      "params": {
+        "articleId": "3",
+        "userId": "1",
+        "text": "dsfsdfsdf"
+      },
+      "id": "l-dEi1_"
+    },
+    {
+      "params": {
+        "articleId": "1",
+        "userId": "1",
+        "text": "dsfsdfsdfsdfsdf"
+      },
+      "id": "QHjuPND"
+    },
+    {
+      "params": {
+        "articleId": "1",
+        "userId": "1",
+        "text": "dsfsdfsdfsdfsdf"
+      },
+      "id": "tBg29Y_"
+    },
+    {
+      "params": {
+        "articleId": "1",
+        "userId": "1",
+        "text": "dsfsdfsdfsdfsdf"
+      },
+      "id": "3uH9pG3"
+    },
+    {
+      "params": {
+        "articleId": "1",
+        "userId": "1",
+        "text": "dsfsdfsdfsdfsdf"
+      },
+      "id": "UcDogJE"
+    },
+    {
+      "params": {
+        "articleId": "1",
+        "userId": "1",
+        "text": "sdfsdfsdf"
+      },
+      "id": "7Uewpo2"
+    },
+    {
+      "params": {
+        "articleId": "1",
+        "userId": "1",
+        "text": "lkasdjfdasf"
+      },
+      "id": "x7O-JiF"
+    },
+    {
+      "params": {
+        "articleId": "1",
+        "userId": "1",
+        "text": "111111111111111111111"
+      },
+      "id": "ZMz3KEg"
+    },
+    {
+      "params": {
+        "articleId": "2",
+        "userId": "1",
+        "text": "2222222222222"
+      },
+      "id": "NLZbwDe"
+    },
+    {
+      "articleId": "2",
+      "userId": "1",
+      "text": "hi",
+      "id": "papXnwx"
+    },
+    {
+      "articleId": "2",
+      "userId": "2",
+      "text": "oh, hi",
+      "id": "kMXHhyo"
+    },
+    {
+      "articleId": "2",
+      "userId": "2",
+      "text": "python",
+      "id": "Ov4UkKZ"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123",
+      "role": "ADMIN",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJVYPKeVtePD_EBMxjXzoHk__89HDRTpghMQ&usqp=CAU"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "123",
+      "role": "USER",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "first": "jgh",
+      "lastname": "Antonov",
+      "age": 45,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Russia",
+      "username": "admin213",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJVYPKeVtePD_EBMxjXzoHk__89HDRTpghMQ&usqp=CAU",
+      "firstname": "Anton"
+    },
+    {
+      "id": "2",
+      "first": "vfg",
+      "lastname": "Bozhko",
+      "age": 20,
+      "currency": "USD",
+      "country": "Armenia",
+      "city": "Moscow",
+      "username": "adm",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
+      "firstname": "Maksim"
+    }
+  ]
+}
